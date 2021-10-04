@@ -1,13 +1,18 @@
 header{
-    background-color: red;
+    background-color: black;
     color:white;
     display:flex;
     flex-direction: row;
     justify-content:space-around;
     align-items: baseline;
 }
+a{
+    text-decoration:none; 
+    text-decoration-color: white;
+}
 .corpo{
     display:flex;
+    flex-wrap:nowrap;
     text-align:center;
     size:100%;
     padding:5%;
@@ -34,7 +39,7 @@ img{
     border-radius: 20px;
 }
 .formulario{
-    padding:10%;
+    padding:5% 40% 40% 40%;
     display:flex;
     align-items:center;
 }
@@ -45,8 +50,9 @@ img{
     text-align: center;
 }
 input{
-    width:150px;
-    height:30px;
+    width:250px;
+    height:20px;
+    padding:10px;
 }
 section#message {
     padding: 1rem;
@@ -75,4 +81,17 @@ section#message {
   span#close:hover{
     color: rgb(255, 0, 0);
     transform: scale(1.5);
+  }
+  footer{
+      text-align:center;
+  }
+  button{
+      align-items: center;
+      height:50px;
+      width: 150px;
+      border-radius: 10px;
+      
+  }
+  b{
+    padding-left: 20px;
   }
