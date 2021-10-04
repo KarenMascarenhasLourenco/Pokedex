@@ -26,6 +26,9 @@ app.get("/index", (req, res) => {
 app.get("/cadastro", (req, res) => {
     res.render("cadastro");
 });
+app.get("/Pokedex", (req, res) => {
+    res.render("Pokedex", {pokedex:pokedex});
+});
 
 app.get("/detalhes/:ind", (req, res) => {
     const indice = req.params.ind;
