@@ -2,7 +2,6 @@ const express = require("express");
 const path = require("path");
 const port = process.env.PORT || 3000;
 const app = express();
-const port = 3000;
 const pokedex = [
     {numero: 001, nome:"Bulbasaur", tipo: "grass", imagem: src="/img/Bulbasaur.png", descricao: "Pokemon inicial de Kanto", altura: 0.71, peso:6.9, categoria: "seed pokemon", habilidade:"overgrow"},
     {numero: 004, nome:"Charmander", tipo: "fire", imagem: href="/img/Charmander.png", descricao: "Pokemon inicial de Kanto", altura: 0.61, peso:8.5, categoria: "lizard pokemon", habilidade:"Blaze"},
