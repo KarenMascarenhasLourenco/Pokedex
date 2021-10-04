@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pokemons</title>
+</head>
+<body>
+    <header>
+        <h1>Pokedex</h1>
+        <a href="/cadastro">Cadastre</a>
+        <a href="/detalhes">Detalhes</a>
+    </header>
+    <section  class = " formulario " >
+    <form  method = "POST"  action = "/form ">
+            <label  for = " Imagem " > Imagem do Pokémon</label ><br>
+            <input  type = " url "  name = " Imagem "  id = " url ">
+        <div class= "box">
+            <label  for = " Nome " > Nome</label ><br>
+            <input  type = " text "  name = " Nome "  placeholder = " Nome do pokemon" >
+        </div >
+        <div class= "box" >
+            <label  for = " Tipo " > Tipo</label ><br>
+            <input  type = " text "  name = " Tipo "  placeholder = " Digite o tipo " >
+        </div >
+        <div class= "box" >
+            <label  for = " Descricao " > Descricao</label ><br>
+            <input  type = " text "  name = " Descricao "  placeholder = "Descreva seu pokemon" >
+        </div >
+        <div class= "box">
+            <label  for = " Altura " > Altura</label ><br>
+            <input  type = " number "  name = " Altura "  placeholder = "Qual é o peso do seu pokemon" >
+        </div >
+        <div class= "box">
+            <label  for = " Peso " > Peso</label ><br>
+            <input  type = " number "  name = " Peso "  placeholder = "Qual é o peso do Pokemon" >
+        </div >
+        <div class= "box">
+            <label  for = " Categoria " > Categoria</label ><br>
+            <input  type = " text "  name = " Categoria "  placeholder = " Digite a Categoria " >
+        </div >
+        <div class= "box" >
+            <label  for = " Habilidade " > Habilidade</label ><br>
+            <input  type = " text "  name = " Habilidade "  placeholder = "Qual a habilidade do seu pokemon?" >
+        </div >
+        <button  type = " submit " > Salvar </ button >
+        </section>
+        <footer>Projeto por: Karen Lourenço</footer>
+        <script src="/js/script.js"></script>
+</body>
+</html>

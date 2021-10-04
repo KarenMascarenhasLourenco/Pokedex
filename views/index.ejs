@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <header>
+        <h1>Pokedex</h1>
+        <a href="/cadastro">Cadastre</a>
+        <a href="/detalhes">Detalhes</a>
+    </header>
+    <% if(message != "") {  %>
+        <section id="message">
+            <p><%= message %></p> <span id="close">&times;</span>
+        </section>
+    <% }  %>
+    <section class="corpo">
+    <% pokedex.forEach(item => { %>
+    <section class="pokemonsIniciais">
+        <div class="borda">
+            <div class="principal">
+                <a href="/detalhes/<%= pokedex.indexOf(item) %>">
+                <img src=<%=item.imagem%>>
+                <p>Nome: <%=item.nome%></p>
+                <p>Tipo: <%=item.tipo%></p>
+            </a>
+            </div>
+        </div>
+    </section>
+    <% }) %>
+</section>
+<footer>Projeto por: Karen Lourenço</footer>
+<script src="/js/script.js"></script>
+</body>
+</html>
